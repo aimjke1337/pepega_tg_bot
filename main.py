@@ -22,7 +22,7 @@ except ImportError:
 # Читать из переменных окружения
 TG_BOT_TOKEN       = os.getenv("TG_BOT_TOKEN")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-OPENROUTER_MODEL   = os.getenv("OPENROUTER_MODEL", "qwen/qwen2-7b-instruct")
+OPENROUTER_MODEL   = os.getenv("OPENROUTER_MODEL")
 
 # Проверим, что токены заданы
 if not TG_BOT_TOKEN or not OPENROUTER_API_KEY:
