@@ -61,8 +61,8 @@ async def askgpt_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     payload = {
         "model": OPENROUTER_MODEL,
         "messages": [
-            {"role": "system", "content": "Ты — бот-помощник и ассистент в групповом чате друзей, отвечай **только на русском языке**, "
-                    "давай краткий по сути ответ, без смешения языков."},
+            {"role": "system", "content": "Ты — бот-помощник и наш друг в групповом чате друзей, отвечай **только на русском языке**, "
+                    "давай ответы по сути, но старайся не укрупнять текст без надобности и без смешения языков."},
             {"role": "user",   "content": user_query},
         ],
     }
